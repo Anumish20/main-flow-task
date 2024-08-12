@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+    <style>
+        .contact {
+            padding: 60px 15%;
+            background: url("https://www.shutterstock.com/image-vector/contact-us-customer-support-hotline-260nw-2402878041.jpg") center/cover no-repeat;
+            color: var(--color-black);
+            text-align: center;
+        }
+    
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: white;
+        }
+    
+        .contact form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    
+        .contact label {
+            display: block;
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: black; 
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 5px; 
+            border-radius: 3px;
+        }
+    
+        .contact input, .contact textarea {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid var(--color-blue);
+            border-radius: 5px;
+            background-color: #FFFFF0;
+            color: var(--color-black);
+        }
+    
+        .contact button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: var(--color-white);
+            background-color: var(--color-primary);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .contact button:hover {
+            background-color: #005bb5;
+        }
+    
+        .contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="menu-bar">
+            <h1 class="logo">Giva<span>Technology</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@givatech.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Giva Technology. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
